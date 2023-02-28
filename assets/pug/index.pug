@@ -5,4 +5,299 @@ html(lang='en')
     +Head('Home page')
     body
         include parts/header.pug
+        section.hero-section
+            .slider-container
+                .slider-text
+                    .slide
+                        .wrapper
+                            h1 Start your unforgettable journey with us.
+                            .text The best travel for your jouney begins now
+                    .slide
+                        .wrapper
+                            h1 Start your unforgettable journey with us.
+                            .text The best travel for your jouney begins now
+                    .slide
+                        .wrapper
+                            h1 Start your unforgettable journey with us.
+                            .text The best travel for your jouney begins now
+                .slider-control
+                    i.icon-arrow-top
+                    i.icon-arrow-bottom
+            .reservation-block 
+                .filters 
+                    .dropdown
+                        .title  Destination
+                            i.icon-arrow-bottom
+                            .text Filter
+                                
+                        .list 
+                            ul 
+                                li Dubai 
+                                li Turkey
+                                li Maldives
+                                li Bali
+                    .dropdown
+                        .title  Person
+                            i.icon-arrow-bottom
+                            .text Filter
+                        .list 
+                            ul 
+                                li 1 
+                                li 2
+                                li 3
+                                li 4
+                    .dropdown
+                        .title  Check in
+                            i.icon-arrow-bottom
+                            .text Filter
+                        .list 
+                            //- ul 
+                            //-     li 
+                            //-     li 
+                            //-     li 
+                            //-     li 
+                    .dropdown
+                        .title  Check out
+                            i.icon-arrow-bottom
+                            .text Filter
+                        .list 
+                            //- ul 
+                            //-     li 
+                            //-     li 
+                            //-     li 
+                            //-     li 
+                +Button('Book Now', 'is-primary', 'icon-arrow-right')
+        section.popular-destination
+            +Title('Popular Destinations', 'Most popular destinations around the world, from historical places to natural wonders.')
+            .slider-container
+                .slider-img
+                    .slide
+                        img(src="./public/images/slider-image.jpeg")
+                        .body
+                            h4 Monument of Berlin
+                            .destination Berlin, Germany
+                                i.icon-location
+                    .slide
+                        img(src="./public/images/slider-image.jpeg")
+                        .body
+                            h4 Monument of Berlin
+                            .destination Berlin, Germany
+                                i.icon-location
+                    .slide
+                        img(src="./public/images/slider-image.jpeg")
+                        .body
+                            h4 Monument of Berlin
+                            .destination Berlin, Germany
+                                i.icon-location
+                    .slide
+                        img(src="./public/images/slider-image.jpeg")
+                        .body
+                            h4 Monument of Berlin
+                            .destination Berlin, Germany
+                                i.icon-location
+                include parts/slider-controls.pug
+        section.special-offers.content-center  
+            +Title('Special Offer', 'Check out our special offer and discounts', 'is-right')
+            .slider-container
+                .slider-offer   
+                    .slide  
+                        img(src="./public/images/offer-image.jpeg", alt="") 
+                        .body 
+                            h4 Lisabon, Portugal
+                            .stars  
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                            p 5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.
+                            .info-price     
+                                .price €500
+                                +Button('Details', "is-primary")
+                    .slide  
+                        img(src="./public/images/offer-image.jpeg", alt="") 
+                        .body 
+                            h4 Athens, Greece
+                            .stars  
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                            p 5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.
+                            .info-price     
+                                .price €800
+                                +Button('Details', "is-primary")
+                    .slide  
+                        img(src="./public/images/offer-image.jpeg", alt="") 
+                        .body 
+                            h4 Rome, Italy
+                            .stars  
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                            p 5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.
+                            .info-price     
+                                .price €750
+                                +Button('Details', "is-primary")
+                    .slide  
+                        img(src="./public/images/offer-image.jpeg", alt="") 
+                        .body 
+                            h4 Lisabon, Portugal
+                            .stars  
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                            p 5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.
+                            .info-price     
+                                .price €500
+                                +Button('Details', 'is-primary')
+                include parts/slider-controls.pug
+        section.blog-section.content-center 
+            +Title('Our Blog','An insight the incredible experience in the world')
+            .content 
+                img(src="./public/images/offer-image.jpeg", alt="") 
+                .article 
+                    h3 Beautiful Italy <br/>Let’s travel
+                    p But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor again is there anyone who loves or pursues.
+                    a(href="#") Read More
+                        i.icon-arrow-right
+        section.trip-planers
+            .content.content-center 
+                +Title('Trip Planners', '20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting and start travelling, start throwing off the bowlines.')
+                +Button('View all trip plans', 'is-primary')
+                .dark-background 
+                .light-background
+            .slider-container
+                .slider-tour.content-center   
+                    .slide
+                        img(src="./public/images/tour-img.jpeg", alt="")
+                        .body 
+                            .top-text   
+                                .sub-title Guided Tour
+                                .price €95/Day
+                            h4 Paris City Tour
+                            .bottom-text 
+                                .stars 
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star  
+                                .length 7 Days tour
+                    .slide
+                        img(src="./public/images/tour-img.jpeg", alt="")
+                        .body 
+                            .top-text   
+                                .sub-title Guided Tour
+                                .price €95/Day
+                            h4 Paris City Tour
+                            .bottom-text 
+                                .stars 
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star  
+                                .length 7 Days tour
+                    .slide
+                        img(src="./public/images/tour-img.jpeg", alt="")
+                        .body 
+                            .top-text   
+                                .sub-title Guided Tour
+                                .price €95/Day
+                            h4 Paris City Tour
+                            .bottom-text 
+                                .stars 
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star  
+                                .length 7 Days tour
+                    .slide
+                        img(src="./public/images/tour-img.jpeg", alt="")
+                        .body 
+                            .top-text   
+                                .sub-title Guided Tour
+                                .price €95/Day
+                            h4 Paris City Tour
+                            .bottom-text 
+                                .stars 
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star  
+                                .length 7 Days tour
+        section.destination-section.content-center  
+            +Title('Destination Gallery','Our photo gallery on trip')
+            include parts/slider-controls.pug
+            .slider-container 
+                .slider-photo.content-center
+                    .slide
+                        img(src="./public/images/tour-img.jpeg", alt="")
+                    .slide
+                        img(src="./public/images/tour-img.jpeg", alt="")
+                    .slide
+                        img(src="./public/images/tour-img.jpeg", alt="")
+                    .slide
+                        img(src="./public/images/tour-img.jpeg", alt="")
+        section.travel-section.content-center 
+            +Title('Traveler’s Experiences','Here some awesome feedback from our travelers')
+            .slider-container 
+                .slider-review
+                    .slide
+                        img(src="./public/images/client.png", alt="")
+                        .body 
+                            p But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.
+                            .stars 
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star 
+                            h5 John Doe
+                            .position Accountant
+                    .slide
+                        img(src="./public/images/client.png", alt="")
+                        .body 
+                            p But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.
+                            .stars 
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star 
+                            h5 John Smith
+                            .position Journalist, HWO News
+                    .slide
+                        img(src="./public/images/client.png", alt="")
+                        .body 
+                            p But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.
+                            .stars 
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star 
+                            h5 Tamara Bellis
+                            .position Managing Director, JTH
+                    .slide
+                        img(src="./public/images/client.png", alt="")
+                        .body 
+                            p But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.
+                            .stars 
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star
+                                i.icon-star 
+                            h5 John Doe
+                            .position Accountant
+                include parts/slider-controls.pug
         include parts/footer.pug

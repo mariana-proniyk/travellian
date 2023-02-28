@@ -1,1 +1,54 @@
-footer
+footer.main-footer 
+    .wrapper.content-center
+        .logo
+            a(href="/") 
+                img(src="./public/images/logo.svg", alt="")
+            p Copyright © Travellian 2020 All rights reserved
+        .menu 
+            .list 
+                h5 Menu
+                ul  
+                    li 
+                        a(href="#") Home
+                    li 
+                        a(href="#") Explore
+                    li 
+                        a(href="#") Travel
+                    li 
+                        a(href="#") Blog
+                    li 
+                        a(href="#") Pricing
+            .list 
+                h5 Information
+                ul  
+                    li 
+                        a(href="#") Destinations
+                    li 
+                        a(href="#") Supports
+                    li 
+                        a(href="#") Terms & Conditions
+                    li 
+                        a(href="#") Privacy
+            .list 
+                h5 Contact Info
+                ul  
+                    li 
+                        a(href="tel:+123 456 789") +123 456 789
+                    li 
+                        a(href="#") info@travellian.com
+                    li 
+                        a(href="#") 1245, New Yourk, USA
+        .contacts 
+            h5 Follow us on
+            .social 
+                i.icon-facebook
+                i.icon-pinterest
+                i.icon-instagram
+                i.icon-twitter
+    section.subscribe-section.content-center  
+            h2 Our Newsletter
+            form.email
+                span Email
+                .subscribe
+                    input(type="email" name="email" placeholder="Enter your email ")
+                    +Button("Subscribe", "is-primary")
