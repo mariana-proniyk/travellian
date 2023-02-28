@@ -1,0 +1,5 @@
+mixin Button(text, className, icon)
+    button(class=`button ${className}`)
+        if icon
+            i(class=icon)
+        = text
