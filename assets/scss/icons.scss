@@ -1,1 +1,74 @@
+$icons-font: "icons";
 
+@font-face {
+    font-family: $icons-font;
+    src: url("../../public/fonts/icons/icons.ttf?aa47c37cc3c06445b3d0a1fe05e6dc5a")
+            format("truetype"),
+        url("../../public/fonts/icons/icons.woff?aa47c37cc3c06445b3d0a1fe05e6dc5a")
+            format("woff"),
+        url("../../public/fonts/icons/icons.woff2?aa47c37cc3c06445b3d0a1fe05e6dc5a")
+            format("woff2"),
+        url("../../public/fonts/icons/icons.svg?aa47c37cc3c06445b3d0a1fe05e6dc5a#icons")
+            format("svg");
+}
+
+i[class^="icon-"]:before,
+i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "arrow-back": "\f101",
+    "arrow-bottom": "\f102",
+    "arrow-left": "\f103",
+    "arrow-right": "\f104",
+    "arrow-top": "\f105",
+    "arrow": "\f106",
+    "facebook": "\f107",
+    "instagram": "\f108",
+    "location": "\f109",
+    "pinterest": "\f10a",
+    "star": "\f10b",
+    "twitter": "\f10c",
+);
+
+.icon-arrow-back:before {
+    content: map-get($icons-map, "arrow-back");
+}
+.icon-arrow-bottom:before {
+    content: map-get($icons-map, "arrow-bottom");
+}
+.icon-arrow-left:before {
+    content: map-get($icons-map, "arrow-left");
+}
+.icon-arrow-right:before {
+    content: map-get($icons-map, "arrow-right");
+}
+.icon-arrow-top:before {
+    content: map-get($icons-map, "arrow-top");
+}
+.icon-facebook:before {
+    content: map-get($icons-map, "facebook");
+}
+.icon-instagram:before {
+    content: map-get($icons-map, "instagram");
+}
+.icon-location:before {
+    content: map-get($icons-map, "location");
+}
+.icon-pinterest:before {
+    content: map-get($icons-map, "pinterest");
+}
+.icon-star:before {
+    content: map-get($icons-map, "star");
+}
+.icon-twitter:before {
+    content: map-get($icons-map, "twitter");
+}
