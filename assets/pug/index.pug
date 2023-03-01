@@ -27,9 +27,8 @@ html(lang='en')
                 .filters 
                     .dropdown
                         .title  Destination
-                            i.icon-arrow-bottom
-                            .text Filter
-                                
+                            input(type="text" placeholder="Filter")
+                            i.icon-arrow-bottom      
                         .list 
                             ul 
                                 li Dubai 
@@ -38,8 +37,8 @@ html(lang='en')
                                 li Bali
                     .dropdown
                         .title  Person
+                            input(type="text" placeholder="Filter")
                             i.icon-arrow-bottom
-                            .text Filter
                         .list 
                             ul 
                                 li 1 
@@ -48,24 +47,12 @@ html(lang='en')
                                 li 4
                     .dropdown
                         .title  Check in
+                            input.check-in(type="text" placeholder="Filter")
                             i.icon-arrow-bottom
-                            .text Filter
-                        .list 
-                            //- ul 
-                            //-     li 
-                            //-     li 
-                            //-     li 
-                            //-     li 
                     .dropdown
                         .title  Check out
+                            input.check-out(type="text" placeholder="Filter")
                             i.icon-arrow-bottom
-                            .text Filter
-                        .list 
-                            //- ul 
-                            //-     li 
-                            //-     li 
-                            //-     li 
-                            //-     li 
                 +Button('Book Now', 'is-primary', 'icon-arrow-right')
         section.popular-destination
             +Title('Popular Destinations', 'Most popular destinations around the world, from historical places to natural wonders.')
@@ -166,8 +153,8 @@ html(lang='en')
                     p But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor again is there anyone who loves or pursues.
                     a(href="#") Read More
                         i.icon-arrow-right
-        section.trip-planers
-            .content.content-center 
+        section.trip-planers.content-center
+            .content 
                 +Title('Trip Planners', '20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting and start travelling, start throwing off the bowlines.')
                 +Button('View all trip plans', 'is-primary')
                 .dark-background 
