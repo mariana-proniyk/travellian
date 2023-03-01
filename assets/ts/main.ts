@@ -16,8 +16,8 @@ $(".dropdown li").on("click", function () {
     $(this)
         .closest(".dropdown")
         .children(".title")
-        .children(".text")
-        .html($(this).text());
+        .children("input")
+        .val($(this).text());
 });
 
 $(".slider-text").slick({
@@ -83,3 +83,6 @@ $(".main-footer form").validate({
         console.log(form, this);
     },
 });
+
+new Pikaday({ field: $("input.check-in")[0] });
+new Pikaday({ field: $("input.check-out")[0] });
